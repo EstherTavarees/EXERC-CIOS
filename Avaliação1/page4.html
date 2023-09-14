@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" type="text/css" href="main.css">
+    <title>PAGE 4</title>
+    <script src="main.js"></script>
+</head>
+<header class="inicio">
+    <div class="logo">
+        <img src="logo.PNG">
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="avaliação1.html">Home Page</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page4.html">Page 4</a></li>
+            <li><a href="page5.html">Page 5</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <form action="">
+        <h2>Descubra seu Perfil Pessoal</h2>
+        <fieldset>
+            <legend>Fale sobre você!</legend>
+            <label for="lname">Nome:</label>
+            <input class="imput" type="text" name="nome" placeholder="Insira seu nome.">
+            <p></p>
+            <label for="comments">O que mais gosta de fazer?</label>
+            <textarea name="textarea" id="comments" cols="30" rows="10" placeholder="Escreva aqui."></textarea>
+            <p></p>
+            <label for="opcoes">Selecione um gênero de filme:</label>
+            <select id="opcoes" name="opcoes" placeholder="Seleção">
+                <option value="">Seleção</option>
+                <option value="opcao1">Romance</option>
+                <option value="opcao2">Ficção Científica</option>
+                <option value="opcao3">Ação</option>
+                <option value="opcao4">Suspense</option>
+                <option value="opcao4">Animação</option>
+            </select>
+            <p></p>
+            <label for="musical">Escolha um(ns) gênero(s) musical(is):</label>
+            <input type="radio" name="op1" value="op1"> Sertanejo
+            <input type="radio" name="op2" value="op2"> POP
+            <input type="radio" name="op3" value="op3"> Rock
+            <input type="radio" name="op4" value="op4"> Gospel
+            <input type="radio" name="op5" value="op5"> Clássica <p></p>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="fileInput">Nos mande seu rostinho:</label>
+                <input type="file" id="fileInput" name="fileInput">
+            </form>
+            <div class="center-button">
+                <input type="submit" value="Enviar dados">
+            </div>
+        </fieldset>
+    </form>
+    <h1></h1>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    background-color: #000055;
+    display: flex;
+    justify-content: space-between;
+
+}
+header button{
+    background: #00000077;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 20px;
+    
+}

@@ -1,0 +1,32 @@
+
+p em {
+    background-color: yellow;
+}
+
+div>span {
+    text-decoration: underline;
+}
+
+h1~p {
+    background-color: lime;
+    
+}
+
+body{
+    background-color: #606
+}
+
+div{
+    padding: 100px;
+    text-align: center;
+    border: 5px solid rgba(255, 255, 0, 0.5);
+    background-color: #ffffff77; 
+    width: 50%;
+    margin: auto;
+    box-shadow: 20xp 20xp 20xp #303;
+}
+div.unicornio{
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    margin-top: 50%;
+    
+}

@@ -1,0 +1,35 @@
+.cabecalho {
+    background-color: #e7f3d4;
+    color:green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Alterar cor do link quando passa o mouse */
+.menu a:hover {
+    color: rgb(9, 170, 17);
+}
+.meu-botao {
+    padding: 10px 20px;
+    background-color: green;
+    color: rgb(227, 241, 227);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

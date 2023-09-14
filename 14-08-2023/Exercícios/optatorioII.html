@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Optatório 2</title>
+</head>
+
+<body>
+    <form action="">
+        <h2 align="center">Fórmulário de Perfil Pessoal</h2>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="lname">Nome:</label>
+            <input type="text" name="nome" placeholder="Insira seu nome."><br><br>
+            <label for="date">Data de nascimento:</label>
+            <input type="date" name="data" id="data"><br><br>
+            <label for="sex">Sexo:</label>
+            <input type="radio" name="feminino" value="op1"> Feminino
+            <input type="radio" name="masculino" value="op2"> Masculino
+            <input type="radio" name="naoinformar" value="op3"> Não desejo informar
+        </fieldset>
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <style>
+                .satisfaction-container {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .satisfaction-label {
+                    flex: -1 0 100px;
+                }
+            </style>
+            </head>
+
+            <body>
+                <div class="satisfaction-container">
+                    <label for="satisfaction">Satisfação:</label>&nbsp&nbsp&nbsp
+                    <span class="satisfaction-label">Insatisfeito</span>
+                    <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" step="1" value="50">
+                    <span class="satisfaction-label">&nbspMuito satisfeito</span>
+                </div>
+                <output for="satisfaction" id="satisfactionOutput"></output>
+                <script>
+                    const satisfactionInput = document.getElementById('satisfaction');
+                    const satisfactionOutput = document.getElementById('satisfactionOutput');
+
+                    satisfactionInput.addEventListener('input', () => {
+                        const value = satisfactionInput.value;
+                        satisfactionOutput.textContent = `${value}%`;
+                    });
+                </script>
+                <br>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="fileInput">Foto de perfil:</label>
+                    <input type="file" id="fileInput" name="fileInput">
+                </form>
+                <br><br>
+                <label for="checkbox">Preferência musical:
+                    <input type="checkbox"> Rock
+                    <input type="checkbox"> POP
+                    <input type="checkbox"> Eletrônica
+                    <input type="checkbox"> Sertanejo
+                </label>
+                <br>
+                <label for="comments">Comentários:
+                    <style>
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: normal;
+                        }
+
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+                    </style>
+                </label>
+                <textarea id="comments" name="comments" rows="10" cols="50"
+                    placeholder="Escreva aqui seu comentário."></textarea>
+        </fieldset>
+        <style>
+            form {
+                display: flex;
+                align-items: normal;
+            }
+
+            .center-button {
+
+                justify-content: right;
+                margin-top: 10px;
+            }
+        </style>
+        <form>
+            <div class="center-button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </form>
+</body>
+
+</html>
