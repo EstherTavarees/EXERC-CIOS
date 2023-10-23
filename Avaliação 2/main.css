@@ -1,0 +1,499 @@
+/*Zerando tudo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Rolar a página suavemente*/
+html {
+    scroll-behavior: smooth;
+}
+/*Estilização do body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: visible;
+    background-color: #faf4e9;
+    overflow-x: hidden;
+}
+
+/*Criação do meu grid*/
+div#corpo {
+    width: max-content;
+    height: min-content;
+    display: grid;
+    max-width: 50vw;
+    grid-template-areas:
+        'header header header header'
+        'main main main main'
+        'main main main main'
+        'footer footer footer footer';
+}
+
+/*Estilização do header*/
+header {
+    grid-area: header;
+    height: 15vh;
+    width: 100vw;
+    background-color: #003049;
+    color: #fff;
+    border: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*Estilização do menu da header*/
+*menu {
+    height: 70vh;
+    padding: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    margin: -60px 2px;
+}
+
+.menu ul li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu ul li:hover {
+    color: #FDF0D5;
+}
+
+.menu img {
+    width: 150px;
+    max-width: 300px;
+    height: auto;
+    margin: -10px 2px;
+    padding: 10px 30px;
+    border: none;
+}
+
+/*Estilização do botão*/
+#botão {
+    background-color: #780000;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: -10px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 6px;
+}
+
+#botão:hover {
+    background-color: #FDF0D5;
+    color: #780000;
+    border: 1px solid #780000;
+    transition: 0.2s;
+}
+
+/*Arrumar os links do menu*/
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #FDF0D5;
+}
+
+/*Estilização do main*/
+main {
+    grid-area: main;
+    height: 85vw;
+    width: 100%;
+    color: #000;
+    padding: 0px;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main h1 {
+    color: #003049;
+}
+
+main h2 {
+    color: #003049;
+}
+
+em {
+    color: #780000;
+}
+
+.banner {
+    width: 1000%;
+    max-width: 1350px;
+    height: min-content;
+    align-self: center;
+    padding: 100px 1px;
+    text-align: center;
+    background-image: url('Design\ sem\ nome\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*sessões de produtos*/
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #780000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    width: 214vh;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    align-self: center;
+}
+
+/*Botão de compra*/
+#compra {
+    background-color: #780000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 6px;
+    width: 100px;
+    align-self: center;
+}
+
+#compra:hover {
+    background-color: #FDF0D5;
+    color: #780000;
+    border: 1px solid #780000;
+    transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+    .compra {
+        width: 75px;
+    }
+}
+
+/*Estilização do footer*/
+footer {
+    grid-area: footer;
+    height: 15vh;
+    width: 100vw;
+    background-color: #2b2d42;
+    color: #fff;
+    border: 8px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*Fim página principal*/
+/*Inicio página sobre nós*/
+.column{
+    float: left;
+    width: 1200%;
+    padding: 1px;
+    height: 300px;
+    text-align: center;
+    margin-right: -155px;
+    margin-left: 15px;
+}
+.column img{
+    width: 80%;
+    max-width: 1000px;
+    height: 300px;
+    align-self: center;
+    margin-top: 200px;
+    margin-right: 250px;
+    margin-left: -30px;
+}
+.columnn img{
+    width: 80%;
+    max-width: 1000px;
+    height: 300px;
+    align-self: center;
+}
+.columnn {
+    float: right;
+    width: 1200%;
+    padding: 1px;
+    height: 300px;
+    text-align: center;
+    margin-right: -155px;
+    margin-left: 15px;
+}
+.columnn h1{
+    width: 80%;
+    max-width: 1000px;
+    align-self: justify;
+    margin-left: -10px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+.columnn p{
+    width: 80%;
+    max-width: 1000px;
+    height: 300px;
+    align-self: center;
+    margin-left: -10px;
+    margin-right: 20px;
+}
+/*Fim página sobre nós*/
+/*Inicio página contato*/
+/*Estilização do formulário = Input e Label*/
+.input-group{
+    position: relative;
+}
+.input-group_input{
+    font: arial;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    outline: 1px solid #780000;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+.input-group_input:is(:focus, :valid){
+    outline-color: #FDF0D5;
+}
+.input-group_label{
+    position: absolute;
+    top: 0;
+    left: 0;
+   translate: 10px 10px;
+   color: /*#01293f*/ #faa307;
+   transition: translate 500ms, scale 500ms;
+}
+.input-group_input:focus + .input-group_label, .input-group_input:valid + .input-group_label{
+    padding-inline: 4px; 
+    translate: 10px -14px;
+    scale: 0.8;
+    background-color: transparent;
+}
+/*Fieldest e legend do formulário*/
+.fieldset{
+    align-self: center;
+    width: 100%;    
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border: 1px solid #780000;
+    border-radius: 4px;
+    margin-left: 370px;
+    margin-top: 200px;
+}
+.fieldset legend{
+    font: arial;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+/*Botão de enviar do formulário*/
+#enviar{
+    background-color: #780000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 6px;
+    width: 100px;
+    margin-inline: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+#enviar:hover {
+    background-color: #FDF0D5;
+    color: #780000;
+    border: 1px solid #780000;
+    transition: 0.2s;
+}
+/*Plano de fundo da página contato*/
+.contato{
+    background-image: url('fundomaincontato.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Banner da página contato*/
+.banner2{
+    width: 1000%;
+    max-width: 1350px;
+    height: min-content;
+    align-self: center;
+    padding: 100px 1px;
+    text-align: center;
+    background-image: url('Design\ sem\ nome\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.banner2 h1{
+    color: #003049;
+}
+.banner2 p em{
+    color: #fff;
+}
+/*Fim página contato*/
+/*Inicio página Termos de responsábilidade*/
+.termo{
+    text-align: left;
+    margin-bottom: 200px;
+    margin-left: 340px;
+    margin-right: -400px;
+    border: #780000 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+    color: #003049;
+}
+.termo h1{
+    text-align: center;
+    color: #fff;
+}
+/*Botão de duvidas termos de responsábilidade*/
+#duvidas{
+    background-color: #780000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 6px;
+    width: 150px;
+    margin-inline: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+#duvidas:hover {
+    background-color: #FDF0D5;
+    color: #780000;
+    border: 1px solid #780000;
+    transition: 0.2s;
+}
+a{
+    text-decoration: none;
+}
+.termospng{
+    background-image: url('fundotermo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner3{
+    width: 1000%;
+    max-width: 1350px;
+    height: min-content;
+    align-self: center;
+    padding: 100px 1px;
+    text-align: center;
+    background-image: url('Design\ sem\ nome\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.banner3 h1{
+color: #fff;
+}
+.banner3 p em{
+    color: #fff;
+}
+.banner3 p{
+    color: #669BBC;
+}
+.banner3 p em p{
+    color: #fff;
+}
+/*fim página termos de responsábilidade*/
+/*Inicio página duvidas*/
+.perguntas{
+    text-align: left;
+    margin-left: 340px;
+    margin-right: -400px;
+    border: #780000 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+}
+.perguntas h2{
+color:#780000;
+}
+.perguntas p{
+    color: #fff;
+}
+.perguntas2{
+    text-align: center;
+    margin-left: 340px;
+    margin-right: -400px;
+    border: #780000 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+}
+.perguntas2 p{
+    color: #fff;
+}
+.faqpng{
+    background-image: url('faq.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner4{
+    width: 1000%;
+    max-width: 1350px;
+    height: min-content;
+    align-self: center;
+    padding: 100px 1px;
+    text-align: center;
+    background-image: url('Design\ sem\ nome\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.banner4 h1{    
+    color: #003049;
+}
+.banner4 p em{
+    color: #780000;
+}
+/*fim página duvidas*/
+/*fim do css*/
+
+

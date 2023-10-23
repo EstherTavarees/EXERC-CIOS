@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #125;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav ul li{
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    cursor: pointer;
+}
+section{
+    height: 80vh;
+    margin-top: 60px;
+}
+main{
+    margin: 2vw;
+
+}
+#promo{
+    padding: 1vh;
+    text-align: center;
+    background-color: yellowgreen;
+}
